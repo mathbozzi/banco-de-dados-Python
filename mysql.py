@@ -11,6 +11,7 @@ con = pymysql.connect(host, user, password, db, port)
 c = con.cursor(pymysql.cursors.DictCursor)
 
 
+
 def select(fields, tables, where=None):  # funcao que retorta a lista do bd
 
     global c
